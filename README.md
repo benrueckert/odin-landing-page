@@ -1,2 +1,5 @@
-# odin-landing-page
-A simple landing page project built as part of The Odin Project Foundations course.
+# Simple Landing Page Project From [The Odin Project](https://www.theodinproject.com/)
+
+---
+
+> Still in development, updates will follow.
