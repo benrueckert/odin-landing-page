@@ -2,4 +2,8 @@
 
 ---
 
+## Live Demo
+
+👉 [View the live site here](https://benrueckert.github.io/odin-landing-page/)
+
 > Still in development, updates will follow.
