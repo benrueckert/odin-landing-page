@@ -29,6 +29,8 @@ header {
     justify-content: space-between;
     background-color: var(--main-dark-color);
     padding: 1rem 6rem;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -40,6 +42,7 @@ ul {
     display: flex;
     gap: 1rem;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 .header-links ul li a {
@@ -58,13 +61,19 @@ ul {
     padding: 4rem 6rem;
     background-color: var(--main-dark-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-left, .hero-right {
+    flex: 1 1 400px;
+    max-width: 600px;
 }
 
 .hero-left {
-    flex: 1;
+    text-align: left;
 }
 
 .hero-left h1 {
@@ -91,14 +100,14 @@ ul {
 }
 
 .hero-right {
-    flex: 1;
     display: flex;
     justify-content: center;
 }
 
 .hero-right img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
@@ -121,9 +130,9 @@ ul {
 
 .random-cards-wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
 }
 
 .random-card {
@@ -145,7 +154,12 @@ ul {
 
 .quote-section {
     background-color: var(--secondary-grey-color);
-    padding: 6rem 16rem;
+    padding: 6rem 2rem;
+}
+
+.quote-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -166,19 +180,34 @@ ul {
 }
 
 .cta-section {
-    padding: 6rem 10rem;
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .cta-wrapper {
     background-color: var(--blue-accent-color);
-    padding: 3rem 6rem;
+    padding: 3rem;
     border-radius: 8px;
     color: var(--main-font-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 } 
+
+.cta-left, .cta-right {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-right {
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 1 auto;
+}
 
 .cta-left h3 {
     font-size: 24px;
@@ -195,6 +224,7 @@ ul {
     border-radius: 8px;
     padding: 0.5rem 1.5rem;
     color: var(--main-font-color);
+    max-width: 200px;
 }
 
 footer {
